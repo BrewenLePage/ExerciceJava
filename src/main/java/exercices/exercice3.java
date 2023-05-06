@@ -6,6 +6,7 @@ import java.util.List;
 
 public class exercice3 {
     public static void main(String[] args) {
+        //Recovers what is in the array + to display the result and find how many time you have each name and
         List<Integer> names = new ArrayList<>();
         String[] array = {"Alexis","BREwen","Théo","Theo","Lucas","Yann","yaNn","Osman","osmaN"};
         List<String> finalArray = new ArrayList<>();
@@ -22,6 +23,7 @@ public class exercice3 {
         System.out.println(names);
     }
     private static String parsedString(String array) {
+        //to convert all different shape of each in one entry
         String element = array;
         element = element.toLowerCase().replaceAll("[éèêë]", "e");
         return element;
